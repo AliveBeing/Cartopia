@@ -53,6 +53,7 @@ export const AppcontextProvider = ({children}) => {
                 delete cartData[itemId];
             }
         }
+        setCartItems(cartData);
         toast.success("Removed from Cart")
     }
 
