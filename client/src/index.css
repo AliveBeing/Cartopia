@@ -11,6 +11,12 @@
     --color-primary-dull:#44ae7c;
 }
 
+/* @theme{
+    --color-primary: #DE3163;
+    --color-primary-dull:#F16767;
+} */
+
+
 .no-scrollbar::-webkit-scrollbar{
     display: none;
 }
