@@ -7,7 +7,7 @@ import { isSellerAuth, sellerLogin, sellerLogout } from '../controllers/sellerCo
 const sellerRouter = express.Router();
 
 sellerRouter.post('/login',sellerLogin)
-sellerRouter.post('/is-auth',authSeller,isSellerAuth)
-sellerRouter.post('/logout',authSeller,sellerLogout)
+sellerRouter.get('/is-auth',authSeller,isSellerAuth)
+sellerRouter.get('/logout',authSeller,sellerLogout)
 
 export default sellerRouter;

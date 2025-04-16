@@ -77,7 +77,7 @@ const Navbar = () => {
             
                 <button onClick={() => open ? setOpen(false) : setOpen(true)} aria-label="Menu" className="">
                     {/* Menu Icon SVG */}
-                    <img src={assets.menu_icon} alt="menu" />
+                    <img className='cursor-pointer' src={assets.menu_icon} alt="menu" />
                 </button>
             </div>
             {/* Mobile Menu */}
