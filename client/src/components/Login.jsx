@@ -19,18 +19,13 @@ const Login = () => {
                 setUser(data.user);
                 toast.success(state === "login" ? "Logged-in" :"Registered");
                 setShowUserLogin(false);
-                //navigate('/');
+                navigate('/');
             }else{
                 toast.error(data.message);
             }
         } catch (error) {
             toast.error(error.message);
         }
-        setUser({
-            email: 'test@123.in',
-            name: 'langanna'
-        })
-        setShowUserLogin(false)
     }
 
     return (

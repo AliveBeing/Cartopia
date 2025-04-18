@@ -72,8 +72,10 @@ export const login = async (req,res) => {
 //check auth : /api/user/is-auth
 export const isAuth = async (req,res) => {
     try {
-        const {userId} = req.body;
-        const user =await User.findById(userId).select("-password")
+        //const {userId} = req.body;
+        const userId = req.userId;
+        // const user = await User.findById(req.userId).select("-password")
+        const user = await User.findById(userId).select("-password")
         return res.json({success: true, user})
     } catch (error) {
         console.log(error.message);

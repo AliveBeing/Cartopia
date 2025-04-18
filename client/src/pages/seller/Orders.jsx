@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useAppContext } from '../../context/AppContext';
-import { assets, dummyOrders } from '../../assets/assets';
+import { assets } from '../../assets/assets';
 
 const Orders = () => {
-    const boxIcon = "https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/e-commerce/boxIcon.svg"
-
+    
     const {currency,axios} = useAppContext()
 
     const [orders,setOrders] = useState([])
