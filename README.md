@@ -1,6 +1,6 @@
 # Cartopia
 
-Cartopia is a full-stack e-commerce web application designed to provide a seamless shopping experience. The project consists of a React-based frontend and a Node.js/Express backend with MongoDB as the database. It supports user and seller functionalities, product management, cart operations, order processing, and payment integration.
+Cartopia is a full-stack e-commerce web application designed to provide a seamless shopping experience. The project consists of a React-based frontend and a Node.js/Express backend with MongoDB as the database. It supports user and seller functionalities, product management, cart operations, order processing.
 
 ---
 
